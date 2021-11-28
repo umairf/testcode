@@ -18,10 +18,12 @@ int main()
 	}
 
 	//Run a python function
-	PyObject *pName, *pModule, *pFunc, *pArgs, *pValue,  *pArgs2, *pValue2;
-
+	PyObject *pName,*pName1, *pModule,*pModule, *pFunc, *pArgs, *pValue,  *pArgs2, *pValue2;
+	pName1 = PyUnicode_FromString((char*)"numpy");
 	pName = PyUnicode_FromString((char*)"script");
 	pModule = PyImport_Import(pName);
+	pModule1 = PyImport_Import(pName1);
+	
 	pFunc = PyObject_GetAttrString(pModule, (char*)"test");
 	pArgs = PyTuple_Pack(1, PyUnicode_FromString((char*)"Greg"));
 	pValue = PyObject_CallObject(pFunc, pArgs);
