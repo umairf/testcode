@@ -26,8 +26,13 @@ int main()
 	pArgs = PyTuple_Pack(1, PyUnicode_FromString((char*)"Greg"));
 	pValue = PyObject_CallObject(pFunc, pArgs);
 	
+	pArgs2 = PyTuple_Pack(1, PyUnicode_FromString((char*)"Umair"));
+	pValue2 = PyObject_CallObject(pFunc, pArgs2);
+	
+	
 	auto result = _PyUnicode_AsString(pValue);
-	std::cout << result << std::endl;
+	auto result2 = _PyUnicode_AsString(pValue2);
+	std::cout << result <<" "<< result2 << std::endl;
 
 	//Close the python instance
 	Py_Finalize();
