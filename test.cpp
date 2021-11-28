@@ -18,7 +18,7 @@ int main()
 	}
 
 	//Run a python function
-	PyObject *pName,*pName1, *pModule,*pModule, *pFunc, *pArgs, *pValue,  *pArgs2, *pValue2;
+	PyObject *pName,*pName1, *pModule,*pModule1, *pFunc, *pArgs, *pValue,  *pArgs2, *pValue2;
 	pName1 = PyUnicode_FromString((char*)"numpy");
 	pName = PyUnicode_FromString((char*)"script");
 	pModule = PyImport_Import(pName);
