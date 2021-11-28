@@ -1,0 +1,1 @@
+g++ -o test test.cpp -lm -std=c++11 -O3 -I/usr/include/python3.8/ -L /usr/lib/x86_64-linux-gnu/ -lpython3.8
