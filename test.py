@@ -23,8 +23,8 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import mean_squared_error
 import keras.backend as K
 
-from script import person
 
+sys.path.append('/root/data1/testcode')
 x=10
 x= x+1
 print (sys.version)
