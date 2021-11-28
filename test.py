@@ -20,9 +20,10 @@ from sklearn.multiclass import OneVsOneClassifier
 from keras.models import model_from_json
 from sklearn.svm import LinearSVC
 from sklearn.metrics import confusion_matrix
-import seaborn as sns
 from sklearn.metrics import mean_squared_error
 import keras.backend as K
+
+from script import person
 
 x=10
 x= x+1
